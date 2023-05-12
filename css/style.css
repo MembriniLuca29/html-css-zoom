@@ -32,8 +32,9 @@ header>div{
 header>div>button{
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 2px;
+    padding: 5px;
     border-radius: 10px;
+    border-width: 0px;
     
 }
 
@@ -56,6 +57,7 @@ main{
     background-image: url(https://picsum.photos/200/300);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: calc((100% / 7) );
     height: calc((100% / 5) ) ; 
     border: 5px solid black;
@@ -75,20 +77,58 @@ main{
 footer{
     display: flex;
     height: 60px;
-
+    background-color: rgb(31, 30, 30);
+    color: white;
+    align-items: center;
+}
+.button-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.button-div>button{
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+    border-width: 0px;
 }
 
+.button-div>.share{
+    color: lightgreen;
+    background-color: transparent;
+    font-size: 25px;
+    border-width: 0px;
+}
+.button-div>.caret-up{
+    font-size:12px;
+}
+.button-div>p{
+font-size: 12px;
+}
 
+.final-button-div{
+    color: red;
+    background-color: transparent;
+    border-width: 0px;
+}
 
 .footer-one{
-width: 20%;
+width: 10%;
 display: flex;
+padding: 5px 5px;
 }
 .footer-two{
-    width: 60%;
+    width: 80%;
     display: flex;
+    justify-content: center;
 }
-.footer-three{
-    width: 20%;
-    text-align: end;
+.footer-trhee{
+    width: 10%;
+    background-color: rgb(68, 67, 67);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
